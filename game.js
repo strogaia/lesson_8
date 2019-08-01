@@ -77,17 +77,13 @@ function move(){
     }
     if(checkBomb()){
         renderPacman(pl, pt, "checkBomb" );
+    }else if(checkCoin()){
+       renderPacman(pl, pt, "checkCoin");
     }else{
-        renderPacman(pl, pt);
-    }
-    if(checkCoin()){
-        renderPacman(pl, pt, "checkCoin");
-    }else{
-         renderPacman(pl, pt);
+       renderPacman(pl, pt);
     }
     renderCoin(cl, ct);
     renderBomb(bl, bt);
-
 }
 ////////////////////////////////
 
